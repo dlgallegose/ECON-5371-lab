@@ -1,2 +1,3 @@
-# -ECON-5371-lab
+# ECON-5371-lab
+
 Labs for the econometrics class
