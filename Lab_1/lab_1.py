@@ -12,6 +12,9 @@ Blackboard, placed in your lab_1/ folder, and pushed to your own
 GitHub repository. Replace the URL below with YOUR OWN raw GitHub
 URL — this one points to the instructor's copy of the data, not
 yours.
+
+https://raw.githubusercontent.com/dlgallegose/ECON-5371-lab/refs/heads/main/Lab_1/gdp_synthetic.csv
+
 """
 
 # %% Environment setup -- run once, in Positron's terminal (not as Python)
@@ -81,7 +84,7 @@ COLOR_OBSERVED = tab10(0)  # blue
 # REPLACE THIS with your own repo's raw URL (github.com file page -> "Raw"
 # button). Using the instructor's URL here will read the instructor's data,
 # not the copy you committed yourself.
-url = "https://raw.githubusercontent.com/ncachanosky/ECON-5371-lab/main/lab_1/gdp_synthetic.csv"
+url = "https://raw.githubusercontent.com/dlgallegose/ECON-5371-lab/refs/heads/main/Lab_1/gdp_synthetic.csv"
 df = pd.read_csv(url, parse_dates=["date"])
 df = df.set_index("date")
 df.index.freq = "QS"  # explicitly quarterly-start; avoids statsmodels having
